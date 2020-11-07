@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 Yves Goldberg (Ygol InternetWork)
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo noupdate="1">
+
+    <record model="stakeholder.role" id="stakeholder_role_demo_1">
+        <field name="name">Office manager</field>
+    </record>
+    <record model="stakeholder.role" id="stakeholder_role_demo_2">
+        <field name="name">IT manager</field>
+    </record>
+    <record model="stakeholder.role" id="stakeholder_role_demo_3">
+        <field name="name">	Independent Contractor</field>
+    </record>
+    <record model="stakeholder.role" id="stakeholder_role_demo_4">
+        <field name="name">CEO</field>
+    </record>
+    <record model="stakeholder.role" id="stakeholder_role_demo_5">
+        <field name="name">Manager</field>
+    </record>
+    <record model="stakeholder.role" id="stakeholder_role_demo_6">
+        <field name="name">Marketing manager</field>
+    </record>
+    <record model="stakeholder.role" id="stakeholder_role_demo_7">
+        <field name="name">Secretary</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 Yves Goldberg (Ygol InternetWork)
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+    <record model="ir.ui.view" id="business_requirement_deliverable_form_view">
+        <field name="name">business.requirement.deliverable.form (in business_requirement_deliverable_role)</field>
+        <field name="model">business.requirement.deliverable</field>
+        <field name="inherit_id" ref="business_requirement_deliverable.view_business_requirement_deliverable_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group/field[@name='currency_id']" position="before">
+                <field name="stakeholder_role"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="business_requirement_deliverable_search_view">
+        <field name="name">business.requirement.deliverable.search (in business_requirement_deliverable_role)</field>
+        <field name="model">business.requirement.deliverable</field>
+        <field name="inherit_id" ref="business_requirement_deliverable.view_business_requirement_deliverable_search"/>
+        <field name="arch" type="xml">
+            <xpath expr='//field[@name="state"]' position='after'>
+                <filter
+                    name="filter_role"
+                    string="Stakeholder role"
+                    icon="terp-go-home"
+                    context="{'group_by':'stakeholder_role'}"
+                />
+            </xpath>
+        </field>
+    </record>
+
+
+</odoo>
